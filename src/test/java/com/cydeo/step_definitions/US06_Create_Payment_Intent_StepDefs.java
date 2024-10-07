@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.notNullValue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class US06_Create_Payment_Intent extends APITestBase{
+public class US06_Create_Payment_Intent_StepDefs extends APITestBase{
 
     @Then("the price value should be an Integer value")
     public void the_price_value_should_be_an_integer_value() {
