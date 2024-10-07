@@ -7,7 +7,6 @@ import io.cucumber.java.en.When;
 
 public class US02_Mark_Payment_Successful_StepDefs extends APITestBase{
 
-
     @Given("the request accept type is {string}")
     public void the_request_accept_type_is(String acceptHeader) {
         givenPart.accept(acceptHeader);
@@ -23,8 +22,5 @@ public class US02_Mark_Payment_Successful_StepDefs extends APITestBase{
     @Then("the status code should be {int}")
     public void the_status_code_should_be(Integer statusCode) {
         thenPart.statusCode(statusCode);
-
     }
-
-
 }

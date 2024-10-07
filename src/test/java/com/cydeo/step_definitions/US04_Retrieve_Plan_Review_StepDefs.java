@@ -47,7 +47,5 @@ public class US04_Retrieve_Plan_Review_StepDefs extends APITestBase{
         System.out.println("planPaymentType = " + planPaymentType);
 
         assertEquals(planPaymentType, productPaymentType);
-
     }
-
 }
