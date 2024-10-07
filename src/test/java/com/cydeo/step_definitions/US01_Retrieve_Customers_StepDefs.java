@@ -11,7 +11,6 @@ public class US01_Retrieve_Customers_StepDefs extends APITestBase {
     @When("the user sends a GET request to {string} endpoint with the xApiKey")
     public void the_user_sends_a_get_request_to_endpoint_with_the_xApiKey(String endPoint) {
         String xApiKey = System.getenv("x-api-key");
-        System.out.println("xApiKey = " + xApiKey);
 
         response = givenPart.contentType("application/json").header("x-api-key", xApiKey).when().get(endPoint);
 
@@ -31,5 +30,4 @@ public class US01_Retrieve_Customers_StepDefs extends APITestBase {
         Boolean actualSuccessFieldValue = jp.get("success");
         assertEquals(expectedSuccessFieldValue, actualSuccessFieldValue);
     }
-
 }

@@ -14,9 +14,7 @@ public class US05_Submit_Promo_Code_StepDefs extends APITestBase{
         if (promoCode.equals("exp50")) {
             return;
         }
-
         Object priceValue = jp.getJsonObject("data.receipt.paymentSummary.basePrice");
-        System.out.println("priceValue = " + priceValue);
         assertTrue( priceValue instanceof Integer);
     }
 
@@ -37,7 +35,6 @@ public class US05_Submit_Promo_Code_StepDefs extends APITestBase{
         assertEquals(expectedPromoCode, actualPromoCode);
         assertEquals(Boolean.valueOf(expectedIsValid), actualIsValid);
         assertEquals(expectedMessage, actualMessage);
-
     }
 
 }
