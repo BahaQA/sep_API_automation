@@ -30,7 +30,7 @@ Feature:Create a new subscription resource in Stripe
       | priceId       | price_1OXpPoJmxFuDfdznRZujBIls |
       | paymentMethod | card                           |
       | promoCode     | off50                          |
-    Then the status code should be 409
+    Then the status code should be 200
     And the Content-type should be "application/json"
     And the values for the subscriptionId, subscriptionKey and priceId shouldn’t be null
 

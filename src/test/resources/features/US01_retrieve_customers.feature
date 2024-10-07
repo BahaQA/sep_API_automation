@@ -14,7 +14,7 @@
     Scenario: Retrieve the list of all customers
       Given the request accept type is "application/json"
       When the user sends a GET request to "customers" endpoint with the xApiKey
-      And the status code should be 200
+      And the status code should be 201
       And the Content-Type should be "application/json"
       And the success field should be "true"
 
