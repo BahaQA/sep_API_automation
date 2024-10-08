@@ -1,0 +1,21 @@
+{
+  "customer":{
+    "firstName":"Bahir",
+    "lastName":"Kaptan",
+    "email":"kaptan@gmail.com",
+    "phoneNumber":"+31685075499",
+    "referralSource":"",
+    "parent":{
+      "firstName":"",
+      "lastName":"",
+      "email":"",
+      "phoneNumber":""
+    }
+  },
+  "referralSource":"",
+  "product":{
+    "lmsProgramCode":"taws",
+    "lmsProgramId":56,
+    "lmsProgramName":"Test Automation with Selenium"
+  }
+}

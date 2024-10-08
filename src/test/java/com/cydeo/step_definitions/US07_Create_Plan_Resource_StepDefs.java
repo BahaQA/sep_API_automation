@@ -29,7 +29,7 @@ public class US07_Create_Plan_Resource_StepDefs extends APITestBase{
         createPlanResource.setPriceId(priceId);
         createPlanResource.setPaymentMethod(paymentMethod);
 
-        response = givenPart.contentType("application/json").body(requestBody).when().post(endpoint);
+        response = givenPart.contentType("application/json").body(createPlanResource).when().post(endpoint);
         response.prettyPrint();
 
         thenPart = response.then();
