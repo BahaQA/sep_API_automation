@@ -22,18 +22,16 @@ Feature:Create a new subscription resource in Stripe
   message should be “ Promotion code is no longer active”
 
 
-
   Scenario: Create a new subscription resource in Stripe
     Given the request accept type is "application/json"
     When the user sends a POST request to "plans/subscription" endpoint with the request body
-      | customerId    | 5                            |
+      | customerId    | 5                              |
       | priceId       | price_1OXpPoJmxFuDfdznRZujBIls |
       | paymentMethod | card                           |
       | promoCode     | off50                          |
     Then the status code should be 200
     And the Content-type should be "application/json"
     And the values for the subscriptionId, subscriptionKey and priceId shouldn’t be null
-
 
 
   Scenario: Create a new subscription resource with a one-time price
