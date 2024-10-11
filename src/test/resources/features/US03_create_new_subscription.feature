@@ -24,7 +24,7 @@ Feature:Create a new subscription resource in Stripe
 
   Scenario: Create a new subscription resource in Stripe
     Given the request accept type is "application/json"
-    When the user sends a POST request to "plans/subscription" endpoint with the request body
+    When the user sends a POST request to "/plans/subscription" endpoint with the request body
       | customerId    | 5                              |
       | priceId       | price_1OXpPoJmxFuDfdznRZujBIls |
       | paymentMethod | card                           |

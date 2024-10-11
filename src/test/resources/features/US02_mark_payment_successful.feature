@@ -14,7 +14,7 @@ Feature: User can mark payment as successful
 
   Scenario: Mark payment as successful
     Given the request accept type is "application/json"
-    When the user sends a POST request to "plans/success" endpoint with the following request body
+    When the user sends a POST request to "/plans/success" endpoint with the following request body
       """
     {
       "paymentType": "recurring",

@@ -17,7 +17,7 @@ Feature:Create a new purchase resource
 
   Scenario Template: Create a new purchase resource
     Given the request accept type is "application/json"
-    When the user sends a POST request to "purchases" endpoint with the request body in "<JSON file>"
+    When the user sends a POST request to "purchases" endpoint with the request body in a "<JSON file>"
     Then the status code should be 200
     And the Content-type should be "application/json"
     And the field of "<customerId>" and "<parentId>" should not be null
